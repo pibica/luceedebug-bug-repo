@@ -1,0 +1,10 @@
+services:
+  lucee:
+    build: . 
+    ports:
+      - "8888:8888"
+      - "10000:10000"
+    environment:
+      - LUCEE_ADMIN_PASSWORD=qwerty
+    volumes:
+      - ./web:/var/www

@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cfml",
+            "request": "attach",
+            "name": "local",
+            "hostName": "localhost",
+            "pathTransforms": [
+                {
+                    "idePrefix": "${workspaceFolder}\\web",
+                    "serverPrefix": "/var/www"
+                }
+            ],
+            "port": 10000
+        }
+    ]
+}

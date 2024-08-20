@@ -1,0 +1,619 @@
+createDebugAdapterTracker {"id":"d58058b8-3fa9-4da8-8443-aa6d2cf8013f","type":"cfml","name":"local","workspaceFolder":{"uri":{"$mid":1,"fsPath":"e:\\WS\\pibica\\luceedebug-bug-repo","_sep":1,"external":"file:///e%3A/WS/pibica/luceedebug-bug-repo","path":"/E:/WS/pibica/luceedebug-bug-repo","scheme":"file"},"name":"luceedebug-bug-repo","index":0},"configuration":{"type":"cfml","request":"attach","name":"local","hostName":"localhost","pathTransforms":[{"idePrefix":"E:\\WS\\pibica\\luceedebug-bug-repo\\web","serverPrefix":"/var/www"}],"port":10000,"__configurationTarget":6}}
+> {
+  "command": "initialize",
+  "arguments": {
+    "clientID": "vscode",
+    "clientName": "Visual Studio Code",
+    "adapterID": "cfml",
+    "pathFormat": "path",
+    "linesStartAt1": true,
+    "columnsStartAt1": true,
+    "supportsVariableType": true,
+    "supportsVariablePaging": true,
+    "supportsRunInTerminalRequest": true,
+    "locale": "en",
+    "supportsProgressReporting": true,
+    "supportsInvalidatedEvent": true,
+    "supportsMemoryReferences": true,
+    "supportsArgsCanBeInterpretedByShell": true,
+    "supportsMemoryEvent": true,
+    "supportsStartDebuggingRequest": true
+  },
+  "type": "request",
+  "seq": 1
+}
+< {
+  "type": "response",
+  "seq": 1,
+  "request_seq": 1,
+  "command": "initialize",
+  "success": true,
+  "body": {
+    "supportsConfigurationDoneRequest": true,
+    "supportsConditionalBreakpoints": true,
+    "supportsHitConditionalBreakpoints": false,
+    "supportsEvaluateForHovers": true,
+    "supportsLogPoints": false,
+    "supportsSingleThreadExecutionRequests": true
+  }
+}
+> {
+  "command": "attach",
+  "arguments": {
+    "type": "cfml",
+    "request": "attach",
+    "name": "local",
+    "hostName": "localhost",
+    "pathTransforms": [
+      {
+        "idePrefix": "E:\\WS\\pibica\\luceedebug-bug-repo\\web",
+        "serverPrefix": "/var/www"
+      }
+    ],
+    "port": 10000,
+    "__configurationTarget": 6,
+    "__sessionId": "d58058b8-3fa9-4da8-8443-aa6d2cf8013f"
+  },
+  "type": "request",
+  "seq": 2
+}
+< {
+  "type": "event",
+  "seq": 2,
+  "event": "initialized"
+}
+< {
+  "type": "response",
+  "seq": 3,
+  "request_seq": 2,
+  "command": "attach",
+  "success": true
+}
+> {
+  "command": "setBreakpoints",
+  "arguments": {
+    "source": {
+      "name": "issue-61-KO.cfm",
+      "path": "e:\\WS\\pibica\\luceedebug-bug-repo\\web\\issue-61-KO.cfm"
+    },
+    "lines": [
+      10,
+      11
+    ],
+    "breakpoints": [
+      {
+        "line": 10
+      },
+      {
+        "line": 11
+      }
+    ],
+    "sourceModified": false
+  },
+  "type": "request",
+  "seq": 3
+}
+> {
+  "command": "setBreakpoints",
+  "arguments": {
+    "source": {
+      "name": "issue-61-OK.cfm",
+      "path": "e:\\WS\\pibica\\luceedebug-bug-repo\\web\\issue-61-OK.cfm"
+    },
+    "lines": [
+      10,
+      11
+    ],
+    "breakpoints": [
+      {
+        "line": 10
+      },
+      {
+        "line": 11
+      }
+    ],
+    "sourceModified": false
+  },
+  "type": "request",
+  "seq": 4
+}
+< {
+  "type": "response",
+  "seq": 4,
+  "request_seq": 3,
+  "command": "setBreakpoints",
+  "success": true,
+  "body": {
+    "breakpoints": [
+      {
+        "id": 226,
+        "verified": true,
+        "line": 10
+      },
+      {
+        "id": 227,
+        "verified": true,
+        "line": 11
+      }
+    ]
+  }
+}
+< {
+  "type": "response",
+  "seq": 5,
+  "request_seq": 4,
+  "command": "setBreakpoints",
+  "success": true,
+  "body": {
+    "breakpoints": [
+      {
+        "id": 228,
+        "verified": true,
+        "line": 10
+      },
+      {
+        "id": 229,
+        "verified": true,
+        "line": 11
+      }
+    ]
+  }
+}
+> {
+  "command": "configurationDone",
+  "type": "request",
+  "seq": 5
+}
+< {
+  "type": "response",
+  "seq": 6,
+  "request_seq": 5,
+  "command": "configurationDone",
+  "success": true
+}
+> {
+  "command": "threads",
+  "type": "request",
+  "seq": 6
+}
+< {
+  "type": "response",
+  "seq": 7,
+  "request_seq": 6,
+  "command": "threads",
+  "success": true,
+  "body": {
+    "threads": [
+      {
+        "id": 114,
+        "name": "AsyncFileHandlerWriter-1"
+      },
+      {
+        "id": 1504,
+        "name": "Catalina-utility-1"
+      },
+      {
+        "id": 1535,
+        "name": "Catalina-utility-2"
+      },
+      {
+        "id": 130,
+        "name": "Cleaner-0"
+      },
+      {
+        "id": 131,
+        "name": "Cleaner-1"
+      },
+      {
+        "id": 111,
+        "name": "Common-Cleaner"
+      },
+      {
+        "id": 115,
+        "name": "FelixDispatchQueue"
+      },
+      {
+        "id": 121,
+        "name": "FelixFrameworkWiring"
+      },
+      {
+        "id": 122,
+        "name": "FelixStartLevel"
+      },
+      {
+        "id": 113,
+        "name": "FileHandlerLogFilesCleaner-1"
+      },
+      {
+        "id": 109,
+        "name": "Finalizer"
+      },
+      {
+        "id": 1580,
+        "name": "http-nio-8888-Acceptor"
+      },
+      {
+        "id": 1555,
+        "name": "http-nio-8888-exec-1"
+      },
+      {
+        "id": 1556,
+        "name": "http-nio-8888-exec-2"
+      },
+      {
+        "id": 1557,
+        "name": "http-nio-8888-exec-3"
+      },
+      {
+        "id": 1558,
+        "name": "http-nio-8888-exec-4"
+      },
+      {
+        "id": 1559,
+        "name": "http-nio-8888-exec-5"
+      },
+      {
+        "id": 1560,
+        "name": "http-nio-8888-exec-6"
+      },
+      {
+        "id": 1561,
+        "name": "http-nio-8888-exec-7"
+      },
+      {
+        "id": 1562,
+        "name": "http-nio-8888-exec-8"
+      },
+      {
+        "id": 1563,
+        "name": "http-nio-8888-exec-9"
+      },
+      {
+        "id": 1564,
+        "name": "http-nio-8888-exec-10"
+      },
+      {
+        "id": 1576,
+        "name": "http-nio-8888-Poller"
+      },
+      {
+        "id": 8,
+        "name": "JDI Internal Event Handler"
+      },
+      {
+        "id": 4,
+        "name": "JDI Target VM Interface"
+      },
+      {
+        "id": 347,
+        "name": "luceedebug-worker"
+      },
+      {
+        "id": 95,
+        "name": "luceedebug-worker"
+      },
+      {
+        "id": 1,
+        "name": "main"
+      },
+      {
+        "id": 112,
+        "name": "Notification Thread"
+      },
+      {
+        "id": 3871,
+        "name": "pool-1-thread-1"
+      },
+      {
+        "id": 10316,
+        "name": "pool-8-thread-1"
+      },
+      {
+        "id": 10502,
+        "name": "pool-9-thread-1"
+      },
+      {
+        "id": 108,
+        "name": "Reference Handler"
+      },
+      {
+        "id": 110,
+        "name": "Signal Dispatcher"
+      },
+      {
+        "id": 132,
+        "name": "Thread-1"
+      },
+      {
+        "id": 1439,
+        "name": "Thread-4"
+      },
+      {
+        "id": 1864,
+        "name": "Thread-7"
+      }
+    ]
+  }
+}
+< {
+  "type": "event",
+  "seq": 8,
+  "event": "stopped",
+  "body": {
+    "reason": "breakpoint",
+    "threadId": 1555,
+    "hitBreakpointIds": [
+      226
+    ]
+  }
+}
+> {
+  "command": "threads",
+  "type": "request",
+  "seq": 7
+}
+< {
+  "type": "response",
+  "seq": 9,
+  "request_seq": 7,
+  "command": "threads",
+  "success": true,
+  "body": {
+    "threads": [
+      {
+        "id": 114,
+        "name": "AsyncFileHandlerWriter-1"
+      },
+      {
+        "id": 1504,
+        "name": "Catalina-utility-1"
+      },
+      {
+        "id": 1535,
+        "name": "Catalina-utility-2"
+      },
+      {
+        "id": 130,
+        "name": "Cleaner-0"
+      },
+      {
+        "id": 131,
+        "name": "Cleaner-1"
+      },
+      {
+        "id": 111,
+        "name": "Common-Cleaner"
+      },
+      {
+        "id": 115,
+        "name": "FelixDispatchQueue"
+      },
+      {
+        "id": 121,
+        "name": "FelixFrameworkWiring"
+      },
+      {
+        "id": 122,
+        "name": "FelixStartLevel"
+      },
+      {
+        "id": 113,
+        "name": "FileHandlerLogFilesCleaner-1"
+      },
+      {
+        "id": 109,
+        "name": "Finalizer"
+      },
+      {
+        "id": 1580,
+        "name": "http-nio-8888-Acceptor"
+      },
+      {
+        "id": 1555,
+        "name": "http-nio-8888-exec-1"
+      },
+      {
+        "id": 1556,
+        "name": "http-nio-8888-exec-2"
+      },
+      {
+        "id": 1557,
+        "name": "http-nio-8888-exec-3"
+      },
+      {
+        "id": 1558,
+        "name": "http-nio-8888-exec-4"
+      },
+      {
+        "id": 1559,
+        "name": "http-nio-8888-exec-5"
+      },
+      {
+        "id": 1560,
+        "name": "http-nio-8888-exec-6"
+      },
+      {
+        "id": 1561,
+        "name": "http-nio-8888-exec-7"
+      },
+      {
+        "id": 1562,
+        "name": "http-nio-8888-exec-8"
+      },
+      {
+        "id": 1563,
+        "name": "http-nio-8888-exec-9"
+      },
+      {
+        "id": 1564,
+        "name": "http-nio-8888-exec-10"
+      },
+      {
+        "id": 1576,
+        "name": "http-nio-8888-Poller"
+      },
+      {
+        "id": 8,
+        "name": "JDI Internal Event Handler"
+      },
+      {
+        "id": 4,
+        "name": "JDI Target VM Interface"
+      },
+      {
+        "id": 347,
+        "name": "luceedebug-worker"
+      },
+      {
+        "id": 95,
+        "name": "luceedebug-worker"
+      },
+      {
+        "id": 1,
+        "name": "main"
+      },
+      {
+        "id": 112,
+        "name": "Notification Thread"
+      },
+      {
+        "id": 3871,
+        "name": "pool-1-thread-1"
+      },
+      {
+        "id": 10316,
+        "name": "pool-8-thread-1"
+      },
+      {
+        "id": 10502,
+        "name": "pool-9-thread-1"
+      },
+      {
+        "id": 108,
+        "name": "Reference Handler"
+      },
+      {
+        "id": 110,
+        "name": "Signal Dispatcher"
+      },
+      {
+        "id": 132,
+        "name": "Thread-1"
+      },
+      {
+        "id": 1439,
+        "name": "Thread-4"
+      },
+      {
+        "id": 1864,
+        "name": "Thread-7"
+      }
+    ]
+  }
+}
+> {
+  "command": "stackTrace",
+  "arguments": {
+    "threadId": 1555,
+    "startFrame": 0,
+    "levels": 20
+  },
+  "type": "request",
+  "seq": 8
+}
+< {
+  "type": "response",
+  "seq": 10,
+  "request_seq": 8,
+  "command": "stackTrace",
+  "success": true,
+  "body": {
+    "stackFrames": [
+      {
+        "id": 38,
+        "name": "??",
+        "source": {
+          "path": "E:\\WS\\pibica\\luceedebug-bug-repo\\web/issue-61-KO.cfm"
+        },
+        "line": 1,
+        "column": 0
+      }
+    ],
+    "totalFrames": 1
+  }
+}
+> {
+  "command": "scopes",
+  "arguments": {
+    "frameId": 38
+  },
+  "type": "request",
+  "seq": 9
+}
+< {
+  "type": "response",
+  "seq": 11,
+  "request_seq": 9,
+  "command": "scopes",
+  "success": true,
+  "body": {
+    "scopes": [
+      {
+        "name": "application",
+        "variablesReference": 240,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      },
+      {
+        "name": "arguments",
+        "variablesReference": 241,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      },
+      {
+        "name": "form",
+        "variablesReference": 242,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      },
+      {
+        "name": "request",
+        "variablesReference": 243,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      },
+      {
+        "name": "session",
+        "variablesReference": 244,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      },
+      {
+        "name": "server",
+        "variablesReference": 245,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      },
+      {
+        "name": "url",
+        "variablesReference": 246,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      },
+      {
+        "name": "variables",
+        "variablesReference": 247,
+        "namedVariables": 0,
+        "indexedVariables": 0,
+        "expensive": true
+      }
+    ]
+  }
+}
